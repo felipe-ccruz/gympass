@@ -16,7 +16,7 @@ export class GetUserProfileUseCase {
   constructor(private readonly usersRepository: UsersRepository) {
     this.usersRepository = usersRepository;
   }
-
+  
   async execute({
     userId,
   }: GetUserProfileRequest): Promise<GetUserProfileResponse> {
